@@ -1,5 +1,5 @@
 ## **Parameterization of Root-Soil Interaction Models using Experimental Data** 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Parameterizing complex functional-structural models (CPlantBox/dumux-rosi) of root-soil interaction and investigating the effects of subsoil management technique, deep loosening, on root architecture development and root water uptake. ̶  Master’s Thesis 2020/21.
 
 ## **Requirement**
