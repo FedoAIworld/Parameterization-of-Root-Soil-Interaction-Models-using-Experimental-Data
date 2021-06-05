@@ -1,0 +1,47 @@
+[Problem]
+Name = singleroot_CF12
+
+[TimeLoop]
+DtInitial =  1 							# 1 day[s]
+TEnd = 9244800								# 107 days [s] 
+MaxTimeStepSize = 3600 						# 3600 # an hour [s] 
+# PeriodicCheckTimes = 86400  					# time for output
+
+[Soil.Grid]
+UpperRight =  0.015 0.015 0.           				# 0.005 0.005 0.                    			# 
+LowerLeft =   -0.015 -0.015 -1.5              			# -0.005 -0.005 -1.5
+Cells = 3 3 150                              				# 1 1 150  cm
+# Periodic = true true false
+# Overlap = 1                                                 	# cell-centered scheme
+
+
+[Soil.BC.Top]
+Type = 4								# atmospheric BC
+
+[Soil.BC.Bot]
+Type = 5 								# free drainage
+
+[Soil.IC]
+P = -300
+
+[Soil.VanGenuchten] 
+# topsoil over subsoil 
+Qr =    0.07 0.08
+Qs =    0.47 0.44
+Alpha = 0.01 0.01                                         		# [1/cm] 
+N =     1.68 1.62       
+Ks =    37.84 15.40                                         		# [cm/d] # 10.5764 0.8145 -3rd opt  # 5.51 2.68 - Rosetta    # 9.8496 9.1584 - project partner 
+
+[Soil.Layer]
+Number = 2 2 1 1
+Z =    -1.5 -0.3 -0.28 0.		
+
+[Climate]
+CSVFile = input/spring_barley_netflux_2018_DL.csv 			# [cm day-1]
+
+
+
+# optimization    [0.01 0.36 0.02 1.08 10.58; 0.01 0.33 0.01 1.08 0.80]
+# rosetta         [0.06 0.36 0.01 1.52 5.51; 0.06 0.35 0.01 1.44 2.68]
+# project partner [0.01 0.44 0.01 1.24 9.85; 0.01 0.41 0.01 1.12 9.16]
+# Deep loosening  [0.07 0.47 0.01 1.68 37.84; 0.08 0.44 0.01 1.62 15.40]

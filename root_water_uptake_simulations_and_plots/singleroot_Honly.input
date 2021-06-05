@@ -1,0 +1,20 @@
+[Problem]
+Name = singleroot_Honly
+RootName = ../roots_1p/input/singleroot.input 
+SoilName = ../soil_richards/input/singleroot_CF12.input
+
+[TimeLoop]
+TEnd = 9244800                          # a day 86400 [s], a week 604800 [s], two weeks 1209600 [s], 107 days 9244800 [s]
+DtInitial = 1                           #360 # [s]
+PeriodicCheckTimes = 43200
+MaxTimeStepSize = 3600
+
+[Soil.IC]
+P = -150 -300        
+Z = -1.5 0.
+
+[Grid]
+Cells = 3 3 150                
+# Periodic = true true false
+# Overlap = 1
+
