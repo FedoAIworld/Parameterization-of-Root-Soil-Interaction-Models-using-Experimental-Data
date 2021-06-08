@@ -20,7 +20,7 @@ Go to [CPlantBox github repos](https://github.com/Plant-Root-Soil-Interactions-M
 
 ## **Data**
 
-The data used in this project can be obtained through personal communication from Prof. Andrea Schnepf, head of the group “Modelling soil-, root systems and rhizosphere processes” at Forschungszentrum Jülich GmbH, Institute of Bio- and Geosciences. 
+The data used in this project can be obtained through personal communication from Prof. Andrea Schnepf, head of the group “Modelling soil-, root systems and rhizosphere processes” at Forschungszentrum Jülich GmbH, Institute of Bio- and Geosciences (IBG-3). 
 
 ## **Acknowledgments**
 
